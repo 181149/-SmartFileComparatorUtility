@@ -22,7 +22,7 @@ public class SmartFileComparator {
     /**
      * @param args
      */
-    private static final Long PRICEDIFFERENCE = (long) 0.005;
+    private static final Double PRICEDIFFERENCE = (Double) 0.005;
 
     public static void main(String[] args) throws IOException {
         String currentDirectory;
@@ -118,8 +118,8 @@ public class SmartFileComparator {
     private static void comparePrice(Record expectedRecord, Record actualRecord,
             BufferedWriter resultFileBufferedStream) throws IOException {
         if (!(expectedRecord.getPrice().equals(actualRecord.getPrice()))) {
-            if (Double.valueOf(expectedRecord.getPrice())
-                    - Double.valueOf(actualRecord.getPrice()) >= PRICEDIFFERENCE) {
+            if (Math.abs(Double.valueOf(expectedRecord.getPrice())
+                    - Double.valueOf(actualRecord.getPrice())) >= PRICEDIFFERENCE) {
                 resultFileBufferedStream.write("mismatch for " + expectedRecord.getTicker() + " (Expected Price: "
                         + expectedRecord.getPrice().toString() + ", Actual Price: " + actualRecord.getPrice().toString()
                         + ")");
