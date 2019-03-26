@@ -1,0 +1,5 @@
+AAPL 001000 00190.5000 Buying Apple.
+MSFT -01001 00101.2000 Selling Microsoft.
+AMZN 005000 00141.2580 Selling Amazon.
+FB   -05000 00166.2500 Selling Facebook.
+GOOG 000500 01220.1200 Just adding up.
