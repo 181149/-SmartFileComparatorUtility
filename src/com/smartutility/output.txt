@@ -1,6 +1,6 @@
 ==== Compare Result ====
-mismatch for GOOG (Expected Price: 01220.1234, Actual Price: 01220.1200)
 mismatch for MSFT (Expected Quantity: -01000, Actual Quantity: -01001)
 missing line for IBM
+mismatch for AMZN (Expected Price: 00141.2500, Actual Price: 00141.2580)
 unexpected line for FB
 ==== END ====
